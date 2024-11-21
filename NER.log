@@ -1,0 +1,327 @@
+INFO:__main__:
+Models have been downloaded. To re-enable, remove the models.done file in your working directory.
+
+INFO:__main__:
+get_file_len executed in: 0.0003497600555419922 seconds
+
+INFO:__main__:
+Run Stanza to tag named entities.
+
+INFO:__main__:
+get_file_len executed in: 0.15065765380859375 seconds
+
+INFO:stanza:Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /stanfordnlp/stanza-resources/main/resources_1.8.0.json HTTP/11" 200 47900
+INFO:stanza:Downloaded file to /home/nqmtien/stanza_resources/resources.json
+INFO:stanza:Loading these models for language: en (English):
+======================================
+| Processor    | Package             |
+--------------------------------------
+| tokenize     | combined            |
+| mwt          | combined            |
+| pos          | combined_charlm     |
+| lemma        | combined_nocharlm   |
+| constituency | ptb3-revised_charlm |
+| depparse     | combined_charlm     |
+| sentiment    | sstplus_charlm      |
+| ner          | conll03_charlm      |
+======================================
+
+INFO:stanza:Using device: cuda
+INFO:stanza:Loading: tokenize
+INFO:stanza:Loading: mwt
+INFO:stanza:Loading: pos
+INFO:stanza:Loading: lemma
+INFO:stanza:Loading: constituency
+INFO:stanza:Loading: depparse
+INFO:stanza:Loading: sentiment
+INFO:stanza:Loading: ner
+INFO:stanza:Done loading processors!
+INFO:__main__:
+ne_stanza_tagger executed in: 72365.4467689991 seconds
+
+INFO:__main__:
+Writing Stanz output
+
+INFO:__main__:
+write_conllu_gzip executed in: 8.345110654830933 seconds
+
+INFO:__main__:
+Evaluate the Stanza model tags
+
+INFO:__main__:
+              precision    recall  f1-score   support
+
+         PER       0.91      0.93      0.92    212736
+        MISC       0.81      0.72      0.76    178313
+         LOC       0.86      0.86      0.86    197732
+         ORG       0.70      0.77      0.73    146036
+
+    accuracy                           0.83    734817
+   macro avg       0.82      0.82      0.82    734817
+weighted avg       0.83      0.83      0.83    734817
+
+
+INFO:__main__:
+[[197729   5484   3837   5686]
+ [ 11186 128684  10139  28304]
+ [  4173   8711 169837  15011]
+ [  4544  16477  12557 112458]]
+
+INFO:__main__:
+Micro-averaged One-vs-Rest ROC AUC score:
+0.89
+
+INFO:__main__:
+score_conllu_file executed in: 10.344003677368164 seconds
+
+INFO:__main__:
+Run NLTK to tag named entities.
+
+INFO:__main__:
+get_file_len executed in: 0.26224255561828613 seconds
+
+INFO:__main__:
+ne_nltk_tagger executed in: 701.5920491218567 seconds
+
+INFO:__main__:
+Writing NLTK output
+
+INFO:__main__:
+write_conllu_gzip executed in: 9.506311655044556 seconds
+
+INFO:__main__:
+Convert NLTK output format to conll03.
+
+INFO:__main__:
+convert_nltk_to_conll executed in: 13.825253963470459 seconds
+
+INFO:__main__:
+Evaluate the NLTK model tags
+
+INFO:__main__:
+              precision    recall  f1-score   support
+
+         PER       0.64      0.84      0.73    198101
+        MISC       0.15      0.01      0.01    109178
+         LOC       0.58      0.55      0.56    179040
+         ORG       0.42      0.59      0.49    120924
+
+    accuracy                           0.56    607243
+   macro avg       0.45      0.50      0.45    607243
+weighted avg       0.49      0.56      0.50    607243
+
+
+INFO:__main__:
+[[166898    123  19253  11827]
+ [ 29876    700  33601  45001]
+ [ 35608   2518  98782  42132]
+ [ 28265   1377  19736  71546]]
+
+INFO:__main__:
+Micro-averaged One-vs-Rest ROC AUC score:
+0.70
+
+INFO:__main__:
+score_conllu_file executed in: 11.723029851913452 seconds
+
+INFO:__main__:
+Run Spacy en_core_web_sm model to tag named entities.
+
+INFO:__main__:
+get_file_len executed in: 0.2169325351715088 seconds
+
+INFO:__main__:
+ne_spacy_tagger executed in: 1414.0299181938171 seconds
+
+INFO:__main__:
+Writing Spacy Web Small output
+
+INFO:__main__:
+write_conllu_gzip executed in: 7.8404929637908936 seconds
+
+INFO:__main__:
+Convert Spacy output format to conll03.
+
+INFO:__main__:
+convert_ontonotes_to_conll executed in: 13.31121826171875 seconds
+
+INFO:__main__:Evaluate Spacy en_core_web_sm model tags
+
+INFO:__main__:
+              precision    recall  f1-score   support
+
+         PER       0.79      0.79      0.79    197666
+        MISC       0.72      0.55      0.62    146701
+         LOC       0.80      0.67      0.73    184585
+         ORG       0.53      0.79      0.64    132417
+
+    accuracy                           0.70    661369
+   macro avg       0.71      0.70      0.69    661369
+weighted avg       0.73      0.70      0.71    661369
+
+
+INFO:__main__:
+[[155465   6695   9257  26249]
+ [ 15985  81125  11824  37767]
+ [ 15307  16703 123792  28783]
+ [  9536   8500   9534 104847]]
+
+INFO:__main__:
+Micro-averaged One-vs-Rest ROC AUC score:
+0.80
+
+INFO:__main__:
+score_conllu_file executed in: 13.042055130004883 seconds
+
+INFO:__main__:
+Run Spacy en_core_web_md model to tag named entities.
+
+INFO:__main__:
+get_file_len executed in: 0.201155424118042 seconds
+
+INFO:__main__:
+ne_spacy_tagger executed in: 1237.2120561599731 seconds
+
+INFO:__main__:
+Writing Spacy Web Medium output
+
+INFO:__main__:
+write_conllu_gzip executed in: 7.496793270111084 seconds
+
+INFO:__main__:
+Convert Spacy output format to conll03.
+
+INFO:__main__:
+convert_ontonotes_to_conll executed in: 11.162131786346436 seconds
+
+INFO:__main__:
+Evaluate Spacy en_core_web_md model tags
+
+INFO:__main__:
+              precision    recall  f1-score   support
+
+         PER       0.86      0.86      0.86    204155
+        MISC       0.73      0.62      0.67    147488
+         LOC       0.87      0.72      0.79    187873
+         ORG       0.58      0.82      0.68    135281
+
+    accuracy                           0.76    674797
+   macro avg       0.76      0.76      0.75    674797
+weighted avg       0.78      0.76      0.76    674797
+
+
+INFO:__main__:
+[[174684   5455   3737  20279]
+ [ 13218  91848   7499  34923]
+ [  9404  19234 135137  24098]
+ [  6260   8577   8888 111556]]
+
+INFO:__main__:
+Micro-averaged One-vs-Rest ROC AUC score:
+0.84
+
+INFO:__main__:
+score_conllu_file executed in: 9.501359701156616 seconds
+
+INFO:__main__:
+Run Spacy en_core_web_lg model to tag named entities.
+
+INFO:__main__:
+get_file_len executed in: 0.195420503616333 seconds
+
+INFO:__main__:
+ne_spacy_tagger executed in: 950.7010734081268 seconds
+
+INFO:__main__:
+Writing Spacy Web Large output
+
+INFO:__main__:
+write_conllu_gzip executed in: 7.406781435012817 seconds
+
+INFO:__main__:
+Convert Spacy output format to conll03.
+
+INFO:__main__:
+convert_ontonotes_to_conll executed in: 11.194310426712036 seconds
+
+INFO:__main__:
+Evaluate Spacy en_core_web_lg model tags
+
+INFO:__main__:
+              precision    recall  f1-score   support
+
+         PER       0.87      0.87      0.87    204780
+        MISC       0.74      0.64      0.69    146459
+         LOC       0.88      0.72      0.79    188144
+         ORG       0.60      0.83      0.70    135880
+
+    accuracy                           0.77    675263
+   macro avg       0.77      0.77      0.76    675263
+weighted avg       0.79      0.77      0.77    675263
+
+
+INFO:__main__:
+[[178224   5114   3514  17928]
+ [ 12008  94001   7092  33358]
+ [  8690  19990 135896  23568]
+ [  5480   8460   8655 113285]]
+
+INFO:__main__:
+Micro-averaged One-vs-Rest ROC AUC score:
+0.85
+
+INFO:__main__:
+score_conllu_file executed in: 9.719312906265259 seconds
+
+INFO:__main__:
+Run Spacy en_core_web_trf model to tag named entities.
+
+INFO:__main__:
+get_file_len executed in: 0.14785313606262207 seconds
+
+INFO:__main__:
+ne_spacy_tagger executed in: 7888.370453834534 seconds
+
+INFO:__main__:
+Writing Spacy Web Transformer output
+
+INFO:__main__:
+write_conllu_gzip executed in: 7.727949619293213 seconds
+
+INFO:__main__:
+Convert Spacy output format to conll03.
+
+INFO:__main__:
+convert_ontonotes_to_conll executed in: 11.209738969802856 seconds
+
+INFO:__main__:
+Evaluate Spacy en_core_web_trf model tags
+
+INFO:__main__:
+              precision    recall  f1-score   support
+
+         PER       0.95      0.96      0.96    210067
+        MISC       0.77      0.86      0.81    171526
+         LOC       0.94      0.79      0.86    193847
+         ORG       0.83      0.89      0.86    144687
+
+    accuracy                           0.87    720127
+   macro avg       0.87      0.87      0.87    720127
+weighted avg       0.88      0.87      0.88    720127
+
+
+INFO:__main__:
+[[202641   3403   1257   2766]
+ [  5608 146757   4148  15013]
+ [  1557  30845 152447   8998]
+ [  2658   9552   4295 128182]]
+
+INFO:__main__:
+Micro-averaged One-vs-Rest ROC AUC score:
+0.92
+
+INFO:__main__:
+score_conllu_file executed in: 10.417960166931152 seconds
+

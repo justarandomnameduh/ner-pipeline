@@ -1,0 +1,164 @@
+INFO:__main__:
+Downloading necessary model files.
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /explosion/spacy-models/master/compatibility.json HTTP/11" 200 4081
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /explosion/spacy-models/master/compatibility.json HTTP/11" 200 4081
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /explosion/spacy-models/master/compatibility.json HTTP/11" 200 4081
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /explosion/spacy-models/master/compatibility.json HTTP/11" 200 4081
+INFO:__main__:
+get_file_len executed in: 0.0005469322204589844 seconds
+
+INFO:__main__:
+Run Stanza to tag named entities.
+
+INFO:__main__:
+ne_stanza_tagger executed in: 7.152557373046875e-07 seconds
+
+INFO:__main__:
+Writing Stanz output
+
+INFO:__main__:
+write_conllu_gzip executed in: 0.0001804828643798828 seconds
+
+INFO:__main__:
+Evaluate the Stanza model tags
+
+INFO:__main__:
+              precision    recall  f1-score   support
+
+         PER       0.00      0.00      0.00       0.0
+        MISC       0.00      0.00      0.00       0.0
+         LOC       0.00      0.00      0.00       0.0
+         ORG       0.00      0.00      0.00       0.0
+
+   micro avg       0.00      0.00      0.00       0.0
+   macro avg       0.00      0.00      0.00       0.0
+weighted avg       0.00      0.00      0.00       0.0
+
+
+INFO:__main__:
+[[0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]]
+
+INFO:__main__:
+Run Stanza to tag named entities.
+
+INFO:__main__:
+get_file_len executed in: 0.15930438041687012 seconds
+
+INFO:stanza:Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /stanfordnlp/stanza-resources/main/resources_1.8.0.json HTTP/11" 200 47900
+INFO:stanza:Downloaded file to /home/nqmtien/stanza_resources/resources.json
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/tokenize/combined.pt HTTP/11" 302 978
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/71bbc746b53227e43644f665261e6f06204f20f75d02d457a6a9dc39b671da8f?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27combined.pt%3B+filename%3D%22combined.pt%22%3B&Expires=1724428579&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODU3OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vNzFiYmM3NDZiNTMyMjdlNDM2NDRmNjY1MjYxZTZmMDYyMDRmMjBmNzVkMDJkNDU3YTZhOWRjMzliNjcxZGE4Zj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=gPjmDs81i8j6AqGHuMHi2RUDFYkIv3MbJdYz4-H1L5ZDVRMU7ZsLigv50b0LAOsH43WNyg35uGN3dJOR2Q90wqNG80iuHv-gRXKRlYQ4DVIyhhTCwDLLlimUHOnNN4HVetImKp-J3v9eZVKrDdJX14k~vgdNbFHM4W3adtHR87Q13B3KIPjaovwr8IAM7pl8L-p-CkU1Wvph50tmuZ1Bp69MsN1bDdpHW8YPYDJIEbCzGobitIMS7R2Uja~Z~BGLSKl459Dvr-znCBMaAkC0cWUAeQ1HEoNNxl8WttpKo4uFHG6oG1J-QXKf0S05kif9c679Bjmp8dSZxxeRW4em8w__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 650849
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/mwt/combined.pt HTTP/11" 302 980
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/e5ee2e5327138bbc2dabf925fc516208113f8e1765eadce5b267aa50193bde7f?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27combined.pt%3B+filename%3D%22combined.pt%22%3B&Expires=1724428581&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODU4MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vZTVlZTJlNTMyNzEzOGJiYzJkYWJmOTI1ZmM1MTYyMDgxMTNmOGUxNzY1ZWFkY2U1YjI2N2FhNTAxOTNiZGU3Zj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=BgW7N5bcY-bbEnLqTn5dkKolHVVHo8ym0OyDVWpgqBwx7hjN-Y51fseYBLEWM~gM0wp6Ok4AEumv7hWs~7FP3VVdwm8Td4ZNkixcj0MOx8IniEsYNociWxdccVCmuWRbH1u79DZJt5AMlnx0IaVHRukO8e2vem7JSLKQg0OeL9n7WFYPMZ4EUGMOEiHLUnydBeX~5wjaAvqnAe2xloir89D25xwWXX0O5b-jaHKtxLQ5WC4f-zxrGcjZjQBzqeekGMmZnPEebQ-z3xLso~zsI5NuILbC3hBhXsX9hQy47rhxl0MfHqfkutTb7QQX52NyTZWv9s9ZTzBSMwXnJiv--Q__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 615741
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/pos/combined_charlm.pt HTTP/11" 302 1002
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/af44da5e7e0e22a6d99d3b6e8932d3b3d630dd63d370b9819f6d598edae1ef61?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27combined_charlm.pt%3B+filename%3D%22combined_charlm.pt%22%3B&Expires=1724428582&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODU4Mn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vYWY0NGRhNWU3ZTBlMjJhNmQ5OWQzYjZlODkzMmQzYjNkNjMwZGQ2M2QzNzBiOTgxOWY2ZDU5OGVkYWUxZWY2MT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=haznBCDVsPK~IHSm5BnOPlhFD6TNC7~90nIbXIjc64ozDKncX6pxsEFhVUceBVOXIhn1k5ShF1OS1YRe~1mJxBpu-byEZDtFVAr-ka1iAJ3MFOPAhpj1WrF3Bnk~yzi8TH2b-Hx~PqqUw2IFbFxCrx0GflJ18EZQUmhsK~VcEfu~odXXlGCiuinR9FuioYYGurINhvlAXJLNFpeH0u27Qp7q-Sw9VodycG796NtXHBk3YLYNauRVKhIheFSGxUBKBSyU1FLoLPtahhnYhAijElZ7g09lm7JEYppIUyQzncf2c~ZK7YsO3dGpjoCG9ghCFdRwRaRlVF4CJinBEl9xdQ__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 38554272
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/lemma/combined_nocharlm.pt HTTP/11" 302 996
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/9f586cdaa722a5b58453b6ba8c3a102a1973dea8722b2aac11b808d170c9b610?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27combined_nocharlm.pt%3B+filename%3D%22combined_nocharlm.pt%22%3B&Expires=1724428585&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODU4NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vOWY1ODZjZGFhNzIyYTViNTg0NTNiNmJhOGMzYTEwMmExOTczZGVhODcyMmIyYWFjMTFiODA4ZDE3MGM5YjYxMD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=P0eoTiSNvZ1bkuMMeagxP-cmfO9gmx6eCY18dZjdQNYyBqk87lWH9-ffS2heaaLrHqE-NYcS9xS9YmAbsDvlFD8IHIwBk8L8x-oxYDLkKrrJ9C1mEcSlJIh4DilwIx3NTxoF0qe8xNeCYxjeXiAPEK6F8W5xepSJ29HiJgkoUwIwx-KsjSk-Lgx9ptNw9zwgTEhTQQDTag9i-c3kDiQtGoBhFPI0H4AbSZvriV5hbW-j2WM-QF1IrXgYUvQ7RYGDq98s24N0qM8loGFcIbOTVH3uGZYl~Wt~GvOEsMTFkz6LuImf1ThmEtKar9sbtImkXe~Jtc4tpIJ4bFGTD3fA8Q__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 4232801
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/constituency/ptb3-revised_charlm.pt HTTP/11" 302 1002
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/ebd10e748e09ba3c98fefca71839b13967c3053db4fb8895b397e24972be93ea?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ptb3-revised_charlm.pt%3B+filename%3D%22ptb3-revised_charlm.pt%22%3B&Expires=1724428587&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODU4N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vZWJkMTBlNzQ4ZTA5YmEzYzk4ZmVmY2E3MTgzOWIxMzk2N2MzMDUzZGI0ZmI4ODk1YjM5N2UyNDk3MmJlOTNlYT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=UwcmMDbJEqRtD1hyTlZlLQPp1H4WSPxOL4I7RRmOtd5fkEj~YLY36Il9VtkR1rYUPzeNvuFuCDyjPM8AcnL9VCtB33gwenyplSwHQYP7JhhCLoAmHZ15cHbwSd06IDdJsVR2ggcn10pCpI9cerzMBppNyzlw9fZvFyFYYLApUXQjazfk7b~INE-JijXrrFz8m1OD92o3-W-QTR4IFofWwtUKUr~mgTNRJKoE~5PJNBoV9-LoTWV0FerxtDxD4iuiEit-VXMH5C64-e5B4zwCOqFyQ1fgQTwayAPFimrYLBww6Ah5tU4pSXKo9m7eqXKIIQ7-YQA1cDEG0jthJPYWuA__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 113288661
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/depparse/combined_charlm.pt HTTP/11" 302 994
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/466c62d0cbe97e6cbcc177ecf5693cd90f113dd03c246da26586eb7695d620f3?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27combined_charlm.pt%3B+filename%3D%22combined_charlm.pt%22%3B&Expires=1724428593&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODU5M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vNDY2YzYyZDBjYmU5N2U2Y2JjYzE3N2VjZjU2OTNjZDkwZjExM2RkMDNjMjQ2ZGEyNjU4NmViNzY5NWQ2MjBmMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=GKo5TIVC8AVoinc-I3BzFw0-Ge2GZI-IGxw1vm9u~FQzhdNwHRG9YGTlT434tJY3ExNe7C9GZvSYsqSgtWMaMZcd3BJkQTg8bpyUdhEZ-uokGbnlDNg87O3ruEEyPNlM-Nc6Jn28JvAwtA5wF7Ezf~m6lxQhKztS64uFogsRNMkslPMBUOqQGZ0B1b3aODtB2aSf9c1Jz4sxjvJfv6Fs~fvbOg~wJyTwWa-G01UTYT7jUEO7SgR3Q55NpVXsF5COP4NfYYfXA3kBHibIIAsZxub-nN8Ka-hQfRI7qe5umfJAlzOAGKI2fMnadWEuaMQoYyYDXNPvTJcvQ9I4QOKSyQ__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 145409414
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/sentiment/sstplus_charlm.pt HTTP/11" 302 990
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/6cf2d3486329aa894e885c2437ecc6fa8ba1932320b34f7b5db65563e86e478e?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27sstplus_charlm.pt%3B+filename%3D%22sstplus_charlm.pt%22%3B&Expires=1724428602&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODYwMn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vNmNmMmQzNDg2MzI5YWE4OTRlODg1YzI0MzdlY2M2ZmE4YmExOTMyMzIwYjM0ZjdiNWRiNjU1NjNlODZlNDc4ZT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=CFhqJdKbNIUxVx7NlSXDuJWloEOV4XssnuhqmyZ2sZPC2ww5L3PpNNpDJvnRNugTCKzX8OLRNLR6LcwEA7nyxLQgZcDIY2ByjLHOlHjxuBWbOvcYPWSvm~bf1BaE-pY8Dic6p4T3CUPaO1ZyVsPHjm98zXIgNpI4T0ewY0bwsxXhFQNHKL-ShhX-vnfxPqH3K~MgIS8AllzbMjI8AMECpwoDlB6yLzVF7RZvA0q-P4bv6oZi3L-ogq5O8YamPLXBOwyfhvW-tYn3B3XDk2zRN6jTvO-XFDYDyqe2wYMjozShOJiBHrPtpmlBgsbgmsufLWOzjk6Boqdz70c2q~OH9g__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 80439871
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/ner/conll03_charlm.pt HTTP/11" 302 994
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/223df6d7cfe6da914e013ea9f21f6d5e583549b6293034b72f140e4243731b6b?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27conll03_charlm.pt%3B+filename%3D%22conll03_charlm.pt%22%3B&Expires=1724428608&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODYwOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vMjIzZGY2ZDdjZmU2ZGE5MTRlMDEzZWE5ZjIxZjZkNWU1ODM1NDliNjI5MzAzNGI3MmYxNDBlNDI0MzczMWI2Yj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=aZwXqgqSy7Vw17odqlXMcmne0cydvNsO~p8N8A1OsP0ys3zyfp1vsoy-05lNuqeTAP9VDC6wndTBh6ysVtMAx6s6~ZxllMxxqhWY19Jn5EMRiuy9CjwAy49ne4u5IVXhfXR-76jpjv2dWeZan7-cCEMXkQcHyZ4mcPcbZTGBTMJVgE7VpfMBCAhmKjw40GX3ZdgmbGX4z5qQwVklD8XrR9HIaiplun63~ZE2l74piHkE9O1GWw8cxTQB79M4FHv7gZYxlm4cYQ7Y6q0xtSSmGHUyCsA8PVVEsoKQIBZgw2iX8UhgHYj6TW~d1G~gzWQdXOuX8ZJpO1yMbxjOYMkOUA__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 47461068
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/pretrain/conll17.pt HTTP/11" 302 980
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/c1020c8b4e42df2617f5f6b7068d7e5ed216e6d816d9f7542720f0bfcfedcf92?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27conll17.pt%3B+filename%3D%22conll17.pt%22%3B&Expires=1724428611&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODYxMX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vYzEwMjBjOGI0ZTQyZGYyNjE3ZjVmNmI3MDY4ZDdlNWVkMjE2ZTZkODE2ZDlmNzU0MjcyMGYwYmZjZmVkY2Y5Mj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=eBiccIgB0Nb7XISf8mlTp3oImRm-31WUPOPf63YlCIQXuqNJnlIyO~mYQ2ShoJPBx4WEw3qoHQiDVRQizZ6AAvo3wn4ldBTPuBv0kcyfJ7Pf6nujkI5~NksgApUihh~RjYNfz0BSVxaqcwE6f8d3aovH8q5ZKO6MGNKi4Q-VgsHNpNCtfWkSijJ8F4lkNbduBzYe-yhH5vaSFhYwjrNVFVsI7Bd32SBbfizJXSoaBath9JKNLKnK-HBYsisRYoidGE9D6N19wz7pvkeYRZN~14d1nB~TtubdmFkvNVBeNl5W-0LdtP-JhnMu44Ym9plOpycEdgSISxo25uKqnpDCFA__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 106701198
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/forward_charlm/1billion.pt HTTP/11" 302 980
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/8a32ac2226dda8ea5d30f2a15fe3f835639977f299cfda315ce1b8a656596fd2?response-content-disposition=inline%3B+filename*%3DUTF-8%27%271billion.pt%3B+filename%3D%221billion.pt%22%3B&Expires=1724428618&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODYxOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vOGEzMmFjMjIyNmRkYThlYTVkMzBmMmExNWZlM2Y4MzU2Mzk5NzdmMjk5Y2ZkYTMxNWNlMWI4YTY1NjU5NmZkMj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=L2kyqHB9zTj10OHT8cDi~36SEDTustxdWCOvLsk-wGIxdZWE2UDHBVDkn1LnXwgamHnf~bQLQzmUYoj8reMfZy5zXgwHxE3KecIy95q-pLfEcq3effo3ZY8R6z-0oayyI3B4veHc5m2ROc5VLtvKYVACgHJ1~YgfMUjQIEVn6WCqCcTnTICj1Gm1brn8gmbLXPP8tMV3h56YwQIntEn5mL38H9vNxSmArAcXqULudut1m8MG77wf6-LksVZlYGtpjDP8o3E82H9hrqE1KzjEpkExCmoeCU~kiFtkBjuwyC4S9IW1gX13onqfrAH5HwFE9KYBqrQqIF5q0AvqnZigFA__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 22743428
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/pretrain/glove.pt HTTP/11" 302 976
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/b0409ca4932fb95f19ad5038014bde333d715901e53867a0d092abb532ce2ad3?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27glove.pt%3B+filename%3D%22glove.pt%22%3B&Expires=1724428621&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyODYyMX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vYjA0MDljYTQ5MzJmYjk1ZjE5YWQ1MDM4MDE0YmRlMzMzZDcxNTkwMWU1Mzg2N2EwZDA5MmFiYjUzMmNlMmFkMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=KXp21OzYgPEk~IswXvsjzlZxvSjbBIceDz2rS1Dsu8~5AsRYy-R8X55KK67ryJhUzlv6mGfQ8uX~E0PILNA0oKUPSK5EB-1EQLDrKSVBsLu3Y~lKWvrlUYUppG-3l0eOAAPns83kQC07c8SN7hAaJs19D3LJJ-dQSfROLRKrnnTWvvuUkNBOoHV6SB5mLjCf-qdpryY7cVjM4bNw7kyB62RoPKGO-dK5m9pAVjmh45E78QUkcqL~LxIs18N-bxeSLA213PvTgYNAzRGDjfsobFQo9pcXOSs3EF2miIKE3DD0Ez7Qso5i2aeOUJo14uTBSAsjsqAIoV2tIsEWnso3dg__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 42575212
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /stanfordnlp/stanza-en/resolve/v1.8.0/models/backward_charlm/1billion.pt HTTP/11" 302 992
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+DEBUG:urllib3.connectionpool:https://cdn-lfs.huggingface.co:443 "GET /stanfordnlp/stanza-en/5d8cb2306650e4fc2b4f7517cc0fb33b38269e05bbf8d05e712e481471052225?response-content-disposition=inline%3B+filename*%3DUTF-8%27%271billion.pt%3B+filename%3D%221billion.pt%22%3B&Expires=1724427506&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQyNzUwNn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9zdGFuZm9yZG5scC9zdGFuemEtZW4vNWQ4Y2IyMzA2NjUwZTRmYzJiNGY3NTE3Y2MwZmIzM2IzODI2OWUwNWJiZjhkMDVlNzEyZTQ4MTQ3MTA1MjIyNT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=Yi8QgYwlm671m00rt0D3MSJC0FGtb2dM7AR4n2rTy~z0nvX90x0-XNX3m~jXXu5bwwmHna5emcR73y9Q7ZF0eo1MWPLLk1uH1TAqTOUFT~Et3GKfFK4E2HkpiMEjeHu~mr9hpl~ICpKHY0zJnw7~ScP3wud1MyrHpD1DX5dy5TjVgCvy~n4hg~GKKxGhvGmeRkolSaEKS-znYYjEIsc71iQVSER-vSA6LMJITc98~XaM9CKxRa4bJ2RnFvqM7RLaxaycYSpRs4Tx54bdWWERG56BTQkkrsYMwCCoyejbm1wX0LqkcZwhLMfwtqIx~C0xlafDzZ8DXCycLRxgQiRlBw__&Key-Pair-Id=K3ESJI6DHPFC7 HTTP/11" 200 22743430
+INFO:stanza:Loading these models for language: en (English):
+======================================
+| Processor    | Package             |
+--------------------------------------
+| tokenize     | combined            |
+| mwt          | combined            |
+| pos          | combined_charlm     |
+| lemma        | combined_nocharlm   |
+| constituency | ptb3-revised_charlm |
+| depparse     | combined_charlm     |
+| sentiment    | sstplus_charlm      |
+| ner          | conll03_charlm      |
+======================================
+
+INFO:stanza:Using device: cuda
+INFO:stanza:Loading: tokenize
+INFO:stanza:Loading: mwt
+INFO:stanza:Loading: pos
+INFO:stanza:Loading: lemma
+INFO:stanza:Loading: constituency
+INFO:stanza:Loading: depparse
+INFO:stanza:Loading: sentiment
+INFO:stanza:Loading: ner
+INFO:stanza:Done loading processors!
+INFO:__main__:
+Run Stanza to tag named entities.
+
+INFO:__main__:
+get_file_len executed in: 0.1609179973602295 seconds
+
+INFO:stanza:Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /stanfordnlp/stanza-resources/main/resources_1.8.0.json HTTP/11" 200 47900
+INFO:stanza:Downloaded file to /home/nqmtien/stanza_resources/resources.json
+INFO:stanza:Loading these models for language: en (English):
+======================================
+| Processor    | Package             |
+--------------------------------------
+| tokenize     | combined            |
+| mwt          | combined            |
+| pos          | combined_charlm     |
+| lemma        | combined_nocharlm   |
+| constituency | ptb3-revised_charlm |
+| depparse     | combined_charlm     |
+| sentiment    | sstplus_charlm      |
+| ner          | conll03_charlm      |
+======================================
+
+INFO:stanza:Using device: cpu
+INFO:stanza:Loading: tokenize
+INFO:stanza:Loading: mwt
+INFO:stanza:Loading: pos
+INFO:stanza:Loading: lemma
+INFO:stanza:Loading: constituency
+INFO:stanza:Loading: depparse
+INFO:stanza:Loading: sentiment
+INFO:stanza:Loading: ner
+INFO:stanza:Done loading processors!
