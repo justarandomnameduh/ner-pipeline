@@ -28,7 +28,7 @@ This project includes:
   - Four models from spaCy
   - One model from nltk
   - Two models from stanza
-- Provides a streamlined framework for debugging, testing, and evaluation.
+- Provides a pipeline for debugging, testing, and evaluation.
 
 ---
 
@@ -81,14 +81,6 @@ Run the included evaluation functions to compute metrics and tabulate results fo
 
 ---
 
-## Key Highlights
-
-- **Focus on Alignment**: The pre-parsed input requires "white space" tokenization to avoid misalignment during evaluation.
-- **Convenience Functions**: Provided utilities streamline logging, format conversion, and output file writing.
-- **Evaluation-Ready**: Automated evaluation ensures consistent and reliable metric computation.
-
----
-
 ## Results
 
 | Model | F1(PER) | F1(MISC) | F1(LOC) | F1(ORG) | F1(Macro AVG) | OvA AUC |
@@ -100,8 +92,3 @@ Run the included evaluation functions to compute metrics and tabulate results fo
 | spaCy-lg | 0.87 | 0.69 | 0.79 | 0.70 | 0.76 | 0.85 |
 | spaCy-tr | **0.96** | **0.81** | **0.86** | **0.86** | **0.87** | **0.92** |
 
----
-
-## Contributions
-
-Quang Minh Tien Nguyen @justarandomnameduh
