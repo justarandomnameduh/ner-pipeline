@@ -62,10 +62,10 @@ For initial development and testing, use the sample data files:
 - **sample.conllu.gz**: Gold labels for evaluation
 
 ### 2. Full Dataset Parsing
-After validating the parsers with the sample data, process the full dataset, which may take up to an hour on standard laptops.
+After validating the parsers with the sample data, continue with the full dataset, which may take an hour on my personal RTX2060.
 
 ### 3. Evaluate and Compare Models
-Run the included evaluation functions to compute metrics and tabulate results for the seven models.
+Follow the **NER.ipynb** to compute metrics and tabulate results for the seven models.
 
 ---
 
